@@ -1,0 +1,66 @@
+:root {
+  --main: #b5838d;
+  --secondary: #e5989b;
+  --tertiary: #ffb4a2;
+  --background: #6d6875;
+  --text: #ffcdb2;
+}
+
+body {
+  background-color: var(--background);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh;
+}
+
+#display {
+  text-align: center;
+}
+
+.top-display {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text);
+  border: 2px solid var(--tertiary);
+  height: 25px;
+  border-radius: 6px;
+}
+
+.drum-pads {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  background-color: var(--secondary);
+  padding: 15px;
+  border-radius: 7.5px;
+  border: 2px solid var(--tertiary);
+}
+
+.drum-pad {
+  border: 2px solid var(--background);
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px var(--background);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main);
+  font-weight: 700;
+  font-size: 2.5rem;
+  transition: 0.4s;
+  color: var(--text);
+}
+
+.drum-pad:active {
+  transform: 0.8;
+  transition: 0.1s;
+  box-shadow: none;
+  background-color: var(--tertiary);
+  color: var(--background);
+}
