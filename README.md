@@ -38,7 +38,7 @@ A display on the top shows the most recently played sound, whether played by hit
 
 Initial load display shown below:
 
-<img src="/public/initialDisplayDrumPads.png">
+<img src="/public/initialDisplayDrumPads.png" width="200">
 
 #### Keys and their corresponding sounds
 
@@ -58,11 +58,11 @@ When a button on the drum pad is clicked, or when the corresponding letter is pr
 
 Below shows which sound was played when the "w" key is hit:
 
- <img src="/public/drumPadsTopDisplay.png">
+ <img src="/public/drumPadsTopDisplay.png" width="200">
 
 Below shows which sound was played when the "z" button is clicked:
 
-<img src="/public/zKeyDisplay.png">
+<img src="/public/zKeyDisplay.png" width="200">
 
 ### What I learned
 
