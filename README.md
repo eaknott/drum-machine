@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# React Drum Kit
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This simple drum kit is built with React, and it plays 9 different sounds through unique keys or by clicking the designated buttons.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [What it does](#what-it-does)
+  - [Links](#links)
+- [Usage](#usage)
+  - [Built with](#built-with)
+  - [How to use](#how-to-use)
+  - [What I learned](#what-i-learned)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### What it does
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+With a simple interface, this displays drum pads with a button for each keyboard letter which plays a different sound in the drum kit.
 
-### `npm test`
+A display on the top shows the most recently played sound, whether played by hitting the corresponding key or by clicking on the corresponding button labeled with the key letter.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Links
 
-### `npm run build`
+- Live Site URL: [Github Pages](https://eaknott.github.io/faq-accordion/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Built with
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React JSX
+- React Hooks: useEffect, useState
+- CSS custom properties
+- Flexbox
 
-### `npm run eject`
+### How to use
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Initial load display shown below:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src="/public/initialDisplayDrumPads.png">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Keys and their corresponding sounds
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Q - Heater 1
+- W - Heater 2
+- E - Heater 3
+- A - Heater 4
+- S - Clap
+- D - Open-HH
+- Z - Kick-'n'-Hat
+- X - Kick
+- C - Closed-HH
 
-## Learn More
+#### Top display
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+When a button on the drum pad is clicked, or when the corresponding letter is pressed on the keyboard, the sound plays and the sound name is displayed in the top display.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Below shows which sound was played when the "w" key is hit:
 
-### Code Splitting
+ <img src="/public/drumPadsTopDisplay.png">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Below shows which sound was played when the "z" button is clicked:
 
-### Analyzing the Bundle Size
+<img src="/public/zKeyDisplay.png">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### What I learned
 
-### Making a Progressive Web App
+- using React hooks: useEffect and useState
+- basic React components
+- DOM manipulation in React
+- practical use of JSX
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Website - [Emily Knott](https://www.emilyknott.com)
+- This project is built as part of the freeCodeCamp Front End Libraries certification https://www.freecodecamp.org/learn/front-end-development-libraries/
